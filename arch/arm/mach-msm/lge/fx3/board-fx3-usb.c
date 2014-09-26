@@ -296,7 +296,7 @@ void __init lge_add_usb_devices(void)
 		msm_otg_pdata.pmic_id_irq =
 				PM8038_USB_ID_IN_IRQ(PM8038_IRQ_BASE);
 	}
-	msm_otg_pdata.phy_init_seq = hsusb_phy_init_seq;
+//	msm_otg_pdata.phy_init_seq = hsusb_phy_init_seq;
 	msm8960_device_otg.dev.platform_data = &msm_otg_pdata;
 	platform_add_devices(usb_devices, ARRAY_SIZE(usb_devices));
 }
