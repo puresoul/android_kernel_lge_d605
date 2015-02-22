@@ -16,7 +16,7 @@
 
 /*
  * ULPI Flags
- */
+*/
 #define ULPI_OTG_ID_PULLUP		(1 << 0)
 #define ULPI_OTG_DP_PULLDOWN_DIS	(1 << 1)
 #define ULPI_OTG_DM_PULLDOWN_DIS	(1 << 2)
@@ -67,7 +67,7 @@
 #define ULPI_PRODUCT_ID_HIGH			0x03
 #define ULPI_FUNC_CTRL				0x04
 #define ULPI_IFC_CTRL				0x07
-#define ULPI_OTG_CTRL				0x0a
+//#define ULPI_OTG_CTRL				0x0a
 #define ULPI_USB_INT_EN_RISE			0x0d
 #define ULPI_USB_INT_EN_FALL			0x10
 #define ULPI_USB_INT_STS			0x13
