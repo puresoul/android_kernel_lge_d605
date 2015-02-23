@@ -144,7 +144,7 @@ static struct fsa8008_platform_data lge_hs_pdata = {
 	.gpio_jpole  = GPIO_EARPOL_DETECT,
 	.gpio_key    = GPIO_EAR_KEY_INT,
 	.latency_for_detection = 10, /* 75 -> 10, 2012.03.23 donggyun.kim - spec : 4.5 ms */
-	.set_headset_mic_bias = sitar_codec_micbias2_ctl, //                                                                        
+//	.set_headset_mic_bias = sitar_codec_micbias2_ctl, //                                                                        
 };
 
 static struct platform_device lge_hsd_device = {
