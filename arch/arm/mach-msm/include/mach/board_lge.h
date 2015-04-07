@@ -39,7 +39,7 @@ struct s5712ACDL1_platform_data {
 #define LGE_RAM_CONSOLE_SIZE (124 * SZ_1K * 2)
 #endif
 #ifdef CONFIG_LGE_CRASH_HANDLER
-#define LGE_CRASH_LOG_SIZE (4*SZ_1K)
+#define LGE_CRASH_LOG_SIZE (4*SZ_1K*2)
 #endif
 
 

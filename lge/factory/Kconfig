@@ -1,21 +1,21 @@
 #platform.team@lge.com	2011.01
 
 config LGE_FACTORY
-	default y
+	default n
 	bool "LGE factory Configuration"
 	help
 		LGE factory Configuration
 
 config LGE_DIAGTEST
 	depends on LGE_FACTORY
-	default y
+	default n
 	bool "LGE TestMode Diag Support"
 	help
 		LGE TestMode Diag Supports
 
 config LGE_DLOAD_SRD
 	depends on LGE_FACTORY
-	default y
+	default n
 	bool "LGE Dload SelfRecoveryDownload Support"
 	help
 		LGE Dload SelfRecoveryDownload Support
