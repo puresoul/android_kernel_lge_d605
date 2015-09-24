@@ -27,6 +27,10 @@ source "drivers/gpu/ion/Kconfig"
 
 source "drivers/gpu/msm/Kconfig"
 
+source "drivers/video/displaylink/Kconfig"
+
+source "drivers/video/udlfb/Kconfig"
+
 config VGASTATE
        tristate
        default n

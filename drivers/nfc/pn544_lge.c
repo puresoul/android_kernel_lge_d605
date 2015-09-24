@@ -602,7 +602,9 @@ static int pn544_probe(struct i2c_client *client,
     		wake_up_process(th);
     	}
 #else
-    	pn544_factory_standby_set();
+    	int pn544_factory_standby_set(void) {
+	    return 0;
+	};
 #endif
 /*              */
     }

@@ -48,6 +48,8 @@ extern void __aeabi_ulcmp(void);
 
 extern void fpundefinstr(void);
 
+extern void __pv_phys_offset(void);
+
 	/* networking */
 EXPORT_SYMBOL(csum_partial);
 EXPORT_SYMBOL(csum_partial_copy_from_user);

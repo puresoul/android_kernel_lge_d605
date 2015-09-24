@@ -20,6 +20,8 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
+#pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
+
 #include <linux/fs.h>
 #include <linux/list.h>
 #include <linux/gfp.h>

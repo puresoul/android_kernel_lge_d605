@@ -533,7 +533,7 @@ int subsystem_restart_dev(struct subsys_device *dev)
 //                                                                                      
 #ifdef LGE_BSP_MODEM_CRASH_DISPLAY
 	int i, smem_size;
-	int size = 1000;
+	int size = 2000;
 	unsigned char *modem_crash_log;
 #endif
 //                                                   
@@ -617,15 +617,17 @@ int subsystem_restart_dev(struct subsys_device *dev)
 		break;
 	case RESET_SOC:
 #if defined(CONFIG_LGE_CRASH_HANDLER)
-		msm_set_restart_mode(subsys_magic_key|SUB_RESET_SOC);
+//		msm_set_restart_mode(subsys_magic_key|SUB_RESET_SOC);
 #endif
-		panic("subsys-restart: Resetting the SoC - %s crashed.", name);
+//		panic("subsys-restart: Resetting the SoC - %s crashed.", name);
+		__subsystem_restart_dev(dev);
 		break;
 	default:
 #if defined(CONFIG_LGE_CRASH_HANDLER)
-		msm_set_restart_mode(SUB_UNKNOWN);
+//		msm_set_restart_mode(SUB_UNKNOWN);
 #endif
-		panic("subsys-restart: Unknown restart level!\n");
+//		panic("subsys-restart: Unknown restart level!\n");
+		__subsystem_restart_dev(dev);
 		break;
 	}
 
